@@ -12,6 +12,7 @@
 		60561A891C48C22C006FF71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60561A871C48C22C006FF71B /* Main.storyboard */; };
 		60561A8B1C48C22C006FF71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60561A8A1C48C22C006FF71B /* Assets.xcassets */; };
 		60561A8E1C48C22C006FF71B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60561A8C1C48C22C006FF71B /* LaunchScreen.storyboard */; };
+		60A2D3061C49F1BE002E8805 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2D3051C49F1BE002E8805 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		60561A8A1C48C22C006FF71B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60561A8D1C48C22C006FF71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60561A8F1C48C22C006FF71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A2D3051C49F1BE002E8805 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				60561A831C48C22C006FF71B /* AppDelegate.swift */,
 				60561A851C48C22C006FF71B /* ViewController.swift */,
+				60A2D3051C49F1BE002E8805 /* DetailViewController.swift */,
 				60561A871C48C22C006FF71B /* Main.storyboard */,
 				60561A8A1C48C22C006FF71B /* Assets.xcassets */,
 				60561A8C1C48C22C006FF71B /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A2D3061C49F1BE002E8805 /* DetailViewController.swift in Sources */,
 				60561A861C48C22C006FF71B /* ViewController.swift in Sources */,
 				60561A841C48C22C006FF71B /* AppDelegate.swift in Sources */,
 			);
@@ -250,9 +254,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Custom Transitions/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tutplus.Custom-Transitions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -261,9 +267,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Custom Transitions/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tutplus.Custom-Transitions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -286,6 +294,7 @@
 				60561A941C48C22C006FF71B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
