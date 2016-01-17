@@ -44,6 +44,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="image" destination="pBm-tS-prW" id="r9K-IW-7RZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,7 +122,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="947.5" y="606.5"/>
+            <point key="canvasLocation" x="1319.5" y="606.5"/>
         </scene>
     </scenes>
     <resources>
