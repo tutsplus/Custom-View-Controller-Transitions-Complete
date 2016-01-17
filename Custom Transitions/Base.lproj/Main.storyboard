@@ -69,14 +69,20 @@
                                     <constraint firstAttribute="width" secondItem="dPv-JS-bGU" secondAttribute="height" multiplier="1:1" id="GQ5-M6-fof"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyT-nC-zQ7">
-                                <rect key="frame" x="16" y="383" width="343" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Example Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyT-nC-zQ7">
+                                <rect key="frame" x="27" y="383" width="320" height="33.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="ZAu-Q4-dbx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Example content for detail item." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7V-PA-NwV">
-                                <rect key="frame" x="16" y="424" width="343" height="197"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" preservesSuperviewLayoutMargins="YES" text="Example content for detail item." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7V-PA-NwV">
+                                <rect key="frame" x="27.5" y="424" width="320" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="TaT-xF-9PY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -95,11 +101,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="PyT-nC-zQ7" firstAttribute="centerX" secondItem="dPv-JS-bGU" secondAttribute="centerX" id="0HE-Lf-Ktd"/>
                             <constraint firstAttribute="trailing" secondItem="dPv-JS-bGU" secondAttribute="trailing" id="7AW-ty-PWY"/>
+                            <constraint firstItem="h7V-PA-NwV" firstAttribute="width" secondItem="IMd-5y-RAf" secondAttribute="width" constant="-24" id="8WQ-P6-jHK"/>
                             <constraint firstItem="h7V-PA-NwV" firstAttribute="top" secondItem="PyT-nC-zQ7" secondAttribute="bottom" constant="8" id="9Yb-bt-U7j"/>
                             <constraint firstItem="PyT-nC-zQ7" firstAttribute="top" secondItem="dPv-JS-bGU" secondAttribute="bottom" constant="8" id="BDp-JK-VQq"/>
                             <constraint firstItem="dPv-JS-bGU" firstAttribute="top" secondItem="IMd-5y-RAf" secondAttribute="top" id="L25-fq-LZM"/>
                             <constraint firstItem="BsO-t3-dLb" firstAttribute="top" secondItem="h7V-PA-NwV" secondAttribute="bottom" constant="8" id="Uk9-1w-wlc"/>
+                            <constraint firstItem="PyT-nC-zQ7" firstAttribute="centerX" secondItem="IMd-5y-RAf" secondAttribute="centerX" id="Uqf-DP-J14"/>
                             <constraint firstItem="pgm-bk-Kf6" firstAttribute="top" secondItem="BsO-t3-dLb" secondAttribute="bottom" constant="8" id="WxD-ZX-q29"/>
                             <constraint firstItem="dPv-JS-bGU" firstAttribute="leading" secondItem="IMd-5y-RAf" secondAttribute="leading" id="YNg-ZU-8hF"/>
                             <constraint firstItem="PyT-nC-zQ7" firstAttribute="leading" secondItem="IMd-5y-RAf" secondAttribute="leadingMargin" id="ZcO-oc-Bik"/>
@@ -107,7 +116,18 @@
                             <constraint firstItem="h7V-PA-NwV" firstAttribute="leading" secondItem="IMd-5y-RAf" secondAttribute="leadingMargin" id="fKa-Kh-UeV"/>
                             <constraint firstItem="PyT-nC-zQ7" firstAttribute="trailing" secondItem="IMd-5y-RAf" secondAttribute="trailingMargin" id="gda-L5-I8G"/>
                             <constraint firstItem="BsO-t3-dLb" firstAttribute="centerX" secondItem="IMd-5y-RAf" secondAttribute="centerX" id="o8I-XK-xmz"/>
+                            <constraint firstItem="h7V-PA-NwV" firstAttribute="centerX" secondItem="IMd-5y-RAf" secondAttribute="centerX" id="yT2-Jx-l9d"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Uqf-DP-J14"/>
+                                <exclude reference="ZcO-oc-Bik"/>
+                                <exclude reference="gda-L5-I8G"/>
+                                <exclude reference="8WQ-P6-jHK"/>
+                                <exclude reference="dpc-mm-I65"/>
+                                <exclude reference="fKa-Kh-UeV"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Clw-es-yvn" appends="YES" id="yHP-My-2ll"/>
                         </connections>
