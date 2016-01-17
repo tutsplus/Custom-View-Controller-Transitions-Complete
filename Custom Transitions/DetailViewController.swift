@@ -9,6 +9,8 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    var rootViewController: ViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +24,25 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func didPanDown(sender: UIPanGestureRecognizer) {
-        
+        let progress = sender.translationInView(self.view).y/self.view.frame.size.height
+        switch sender.state {
+        case .Began:
+            self.rootViewController.interactionController = UIPercentDrivenInteractiveTransition()
+            self.dismissViewControllerAnimated(true, completion: nil)
+        case .Changed:
+            self.rootViewController.interactionController?.updateInteractiveTransition(progress)
+        case .Ended:
+            if progress >= 0.5 {
+                self.rootViewController.interactionController?.finishInteractiveTransition()
+            } else {
+                self.rootViewController.interactionController?.cancelInteractiveTransition()
+            }
+            
+            self.rootViewController.interactionController = nil
+        default:
+            self.rootViewController.interactionController?.cancelInteractiveTransition()
+            self.rootViewController.interactionController = nil
+        }
     }
 
     @IBAction func didPressToClose(sender: AnyObject) {

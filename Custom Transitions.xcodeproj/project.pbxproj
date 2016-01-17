@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603B40531C4B40B70013B5C5 /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603B40521C4B40B70013B5C5 /* CustomTransition.swift */; };
 		60561A841C48C22C006FF71B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60561A831C48C22C006FF71B /* AppDelegate.swift */; };
 		60561A861C48C22C006FF71B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60561A851C48C22C006FF71B /* ViewController.swift */; };
 		60561A891C48C22C006FF71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60561A871C48C22C006FF71B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		603B40521C4B40B70013B5C5 /* CustomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
 		60561A801C48C22C006FF71B /* Custom Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Transitions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60561A831C48C22C006FF71B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60561A851C48C22C006FF71B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				60561A831C48C22C006FF71B /* AppDelegate.swift */,
 				60561A851C48C22C006FF71B /* ViewController.swift */,
 				60A2D3051C49F1BE002E8805 /* DetailViewController.swift */,
+				603B40521C4B40B70013B5C5 /* CustomTransition.swift */,
 				60561A871C48C22C006FF71B /* Main.storyboard */,
 				60561A8A1C48C22C006FF71B /* Assets.xcassets */,
 				60561A8C1C48C22C006FF71B /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				60A2D3061C49F1BE002E8805 /* DetailViewController.swift in Sources */,
 				60561A861C48C22C006FF71B /* ViewController.swift in Sources */,
 				60561A841C48C22C006FF71B /* AppDelegate.swift in Sources */,
+				603B40531C4B40B70013B5C5 /* CustomTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
